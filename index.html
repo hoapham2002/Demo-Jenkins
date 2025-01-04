@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="assets/style/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        img {
+            object-fit: cover; 
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 w-full h-full bg-repeat -z-20" style="background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20191001/pngtree-delicate-fabric-floral-pattern-repeat-design-image_318393.jpg);">
+    <div class="relative w-full h-[70vh]">
+        <video 
+            class="absolute top-0 left-0 w-full lg:h-full object-cover -z-10" src="assets/img/Video-bg.mp4" autoplay muted loop>
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        <div class="header flex justify-around lg:justify-between lg:mx-44 z-10">
+            <img src="assets/img/logo-restaurant-Photoroom.png" alt="" class="logo_navbar w-[60px] h-[50px] xl:w-52 xl:h-32">
+            <div class="header_navbar text-white hidden lg:flex lg:items-center">
+                <div class="menu flex items-center mx-4 cursor-pointer">
+                    <p class="menu_content">Menu</p>
+                    <i class="fa-solid fa-angle-down ml-1 mt-1"></i>
+                </div>
+                <div class="type-restaurant flex items-center mx-4 cursor-pointer">
+                    <p class="type-restaurant-content">Nhà hàng</p>
+                    <i class="fa-solid fa-angle-down ml-1 mt-1"></i>
+                </div>
+                <div class="about flex items-center mx-4 cursor-pointer">
+                    <p class="about-content">Về chúng tôi</p>
+                    <i class="fa-solid fa-angle-down ml-1 mt-1"></i>
+                </div>
+                <div class="blog flex items-center cursor-pointer">Blog</div>
+                <div class="language flex items-center mx-4 cursor-pointer">
+                    <img src="assets/img/vietnam.png" alt="" class="w-5 h-4">
+                    <p class="type-language">Tiếng Việt</p>
+                    <i class="fa-solid fa-angle-down ml-1 mt-1"></i>
+                </div>
+                <button class="text-lg font-bold h-2/5 mx-4 px-6 cursor-pointer border border-2 hover:bg-black ">Đặt món online</button>
+                <button class="text-lg font-bold h-2/5 mx-4 px-6 bg-orange-400 hover:bg-black cursor-pointer">Đặt bàn</button>
+                
+            </div>
+            <div class="fa-solid fa-bars flex items-center text-white mx-4 cursor-pointer"></div>
+        </div>
+        <div class="flex flex-col items-center mt-20 z-10">
+            <p class="font-protest_revolution text-orange-400 lg:text-5xl">Chào mừng đến Quán:</p>
+            <h1 class="font-mono text-white lg:text-6xl">VIETNAMESE CHÚNG TÔI</h1>
+            <p class="font-sans text-white lg:text-sm">Nơi bạn có thể gọi là nhà</p>
+        </div>
+    </div>
+    <div class="flex justify-center items-center mt-28 text-center animate-moveUpDown">
+        <div class="relative top-1/2 left-1/2 transform -translate-x-[175%] -translate-y-[0%] bg-white p-12 text-center border rounded-lg shadow-lg w-[40%] max-w-[600px] sm:w-full">
+            <h1 class="font-protest_revolution text-5xl text-orange-400 mb-4">Khám phá câu <br> chuyện <span class="font-mono font-extrabold text-2xl text-black"><br>CỦA CHÚNG TÔI</span></h1>
+            <p class="text-gray-700 leading-relaxed">
+                Nhà hàng Hoa Việt – nơi gợi nhắc hương vị truyền thống của ẩm thực Việt Nam, mang đến cho thực khách những trải nghiệm khó quên qua từng món ăn tinh tế được chế biến bởi đầu bếp danh tiếng Xuân Hòa. Với tâm huyết và tình yêu dành cho văn hóa ẩm thực quê hương, đầu bếp Xuân Hòa không chỉ tái hiện những công thức truyền thống mà còn sáng tạo để đem lại một sắc thái mới mẻ, phù hợp với khẩu vị hiện đại nhưng vẫn giữ nguyên bản sắc. <br><br>
+    
+                Tại Hoa Việt, thực khách sẽ được thưởng thức những món ăn đặc trưng từ mọi miền tổ quốc: nem rán Hà Nội giòn rụm, kết hợp với nước chấm chua ngọt đậm đà; phở bò tái nạm thơm lừng từ nước dùng được hầm kỹ lưỡng; gỏi cuốn tôm thịt tươi ngon cuộn trọn vị thanh mát của rau xanh; hay lẩu mắm miền Tây với hương vị đậm đà, mộc mạc của đồng quê. Mỗi món ăn là sự kết hợp hoàn hảo giữa nguyên liệu tươi ngon nhất, kỹ thuật chế biến điêu luyện, và phong cách bày trí đầy tinh tế, làm hài lòng cả vị giác lẫn thị giác. <br><br>
+    
+                Không gian của Hoa Việt được thiết kế trang nhã, đậm chất truyền thống với những họa tiết lấy cảm hứng từ hình ảnh hoa sen – biểu tượng của sự thanh tao và thuần khiết trong văn hóa Việt Nam. Từ ánh đèn vàng ấm áp đến bàn ghế gỗ mộc mạc, mỗi góc nhỏ của nhà hàng đều mang lại cảm giác gần gũi, ấm cúng, giúp thực khách như được trở về quê hương thân thuộc. <br><br>
+    
+                Dù bạn đang tìm kiếm một nơi để họp mặt gia đình, gặp gỡ đối tác, hay đơn giản là thưởng thức một bữa ăn ngon giữa nhịp sống bận rộn, Hoa Việt sẽ là lựa chọn hoàn hảo. Hãy để chúng tôi đưa bạn vào hành trình khám phá tinh hoa ẩm thực Việt Nam – một hành trình giàu cảm xúc, đong đầy hương vị quê hương, dưới bàn tay tài hoa của đầu bếp Xuân Hòa.
+            </p>
+        </div>
+    </div>
+    <div class="flex items-center mt-28 mx-44">
+        <div class="flex flex-wrap w-[60%]">
+            <div class="image-container w-[247px] h-[165px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[247px] h-[165px] rounded-[5px] overflow-hidden cursor-pointer mx-5 mb-5">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[110px] h-[165px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[142px] h-[241px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[142px] h-[241px] rounded-[5px] overflow-hidden cursor-pointer mx-5 mb-5">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[320px] h-[241px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[247px] h-[165px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[247px] h-[165px] rounded-[5px] overflow-hidden cursor-pointer mx-5 mb-5">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[110px] h-[165px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[250px] h-[167px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[111px] h-[167px] rounded-[5px] overflow-hidden cursor-pointer mx-5 mb-5">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[111px] h-[167px] rounded-[5px] overflow-hidden cursor-pointer mr-5">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[112px] h-[167px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[312px] h-[468px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container w-[312px] h-[468px] rounded-[5px] overflow-hidden cursor-pointer mx-5 ">
+                <img loading="lazy" src="assets/img/scene-background.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+        </div>
+        <div class="bg-white rounded-[5px] w-[44%] h-[640px] p-[60px] text-center animate-moveUpDown shadow-lg">
+            <h1 class="font-protest_revolution text-orange-400 text-5xl">Tin tức <span class="font-mono text-black"><br> mới</span></h1>
+            <p class="mt-6">Tin vui cho người yêu ẩm thực Việt! Chi nhánh Hoa Việt mới được nhiều người mong đợi đã chính thức khai trương tại Quận 2. Nhà hàng mới này của Hoa Việt Group có thực đơn gồm các món ăn Việt Nam thơm ngon, được chế biến từ những nguyên liệu tươi ngon nhất và phục vụ trong bầu không khí đầy phong cách và thân thiện. Đừng bỏ lỡ cơ hội thưởng thức hương vị Việt Nam tại chi nhánh mới Hoa Việt!
+                <br>Hoa Việt – 99 Tran Ngoc Dien, Thao Dien Ward, Thu Duc city, Ho Chi Minh city
+                +84123456789
+            </p>
+            <h2 class="font-mono text-orange-400 font-bold p-0 mt-36 border-b-[3px] border-orange-400 cursor-pointer">KHÁM PHÁ BÍ MẬT CÁC NHÀ HÀNG CỦA CHÚNG TÔI</h2>
+        </div>
+    </div>
+    <div class="flex items-center mt-28 mx-44">
+        <div class="text-center w-1/2 h-[800px] bg-white p-[60px] rounded-[5px] shadow-lg animate-moveUpDown">
+            <h1 class="font-protest_revolution text-orange-400 text-5xl">Khai trương món mới <br> Nhà Hàng Ẩm Thực Hoa Việt <br> <span class="font-mono text-black text-4xl">IN HO CHI MINH CITY</span></h1>
+            <p>Nhà hàng Hoa Việt hân hoan giới thiệu bộ sưu tập món ăn mới đậm đà hương vị truyền thống nhưng vẫn mang hơi thở hiện đại! <br><br> Với sự sáng tạo không ngừng từ đầu bếp danh tiếng Xuân Hòa, các món ăn mới được ra mắt hứa hẹn sẽ làm hài lòng ngay cả những thực khách khó tính nhất. Từ Gỏi Sen Tôm Thịt thanh mát, Bò Nướng Lá Chanh đậm đà, cho đến món tráng miệng độc đáo như Chè Sầu Riêng Dừa Non, mỗi món ăn đều là sự kết hợp tinh tế giữa nguyên liệu tươi ngon và kỹ thuật chế biến điêu luyện.
+
+                Hãy cùng chúng tôi khám phá hành trình ẩm thực mới lạ, để cảm nhận một cách trọn vẹn sự giao thoa của hương vị truyền thống và phong cách hiện đại. Đặc biệt, nhân dịp khai trương món mới, thực khách sẽ được giảm giá 20% trong tuần đầu tiên! Đừng bỏ lỡ cơ hội trải nghiệm ẩm thực đỉnh cao tại Hoa Việt – nơi mọi bữa ăn trở thành một kỷ niệm đáng nhớ! <br><br><br>
+            </p>
+            <p>Nhà hàng Hoa Việt: 143 Võ Oanh, P25,<br> Q.Bình Thạnh, Tp. Hồ Chí Minh <br>+84123456789</p>
+        </div>
+        <div class="w-1/2 grid grid-cols-4 gap-4">
+            <div class="image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://lh6.googleusercontent.com/proxy/OmvFyNGEp_fU13cS_Do_faOPVPpuZPinf1B6eyuONhPWttnRRlOxBY2gqUUTaoURMDuuyZWAYkg0UJvCNAi829Hh6qsgtBiY5EGQ5nYlpCpwUU_uiiWwqnvSqUbWdlHvPbImdx2YF74ThfLHIRNVnMcDaRPF" alt="Gỏi Sen Tôm Thịt" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="col-span-2 image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://vcdn1-giadinh.vnecdn.net/2017/11/21/bep-nha-xu-quang-2019-1511248653.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=qpd0_CMxKf5BzvrHXfvMow" alt="Súp Bí Đỏ Hải Sản" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYL-cRkNzwGcvTeZKdMK2-7ollyR1yg-gsSA&s" alt="Nem Rán Truffle" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="col-span-2 image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp9_qYuuCVs7VdjZwmO6hPtMhWLAED1mrIhw&s" alt="Bò Nướng Lá Chanh" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="col-span-2 image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://happythai.vn/uploads/source/san-pham/ca/ca-che-m-so-t-o-t-9-large.jpg" alt="Cá Chẽm Sốt Me" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFmkcsH4539JLlgAAaYttBaFH-wuWV9BDmMQ&s" alt="Cơm Cháy Gà Xé Phay" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="col-span-2 image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://daotaobeptruong.vn/wp-content/uploads/2019/09/tom-nuong-muoi-ot.jpg" alt="Tôm Nướng Sốt Cam" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://laugalae.com/thumbs/960x960x2/upload/product/lau-ga-la-e-2628.jpg" alt="Lẩu Gà Lá É" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-L89tNZimsLh9yekOHYqKqd0xeYH-xHINQ&s" alt="Sườn Non Rang Muối Hồng Kông" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="col-span-2 image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://r2.nucuoimekong.com/wp-content/uploads/cach-lam-banh-xeo-mien-tay.jpg" alt="Bánh Xèo Mini" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="image-container h-[145px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UZCw5p539yll4fvuxy1Tlhul6BWGO45JkQ&s" alt="Hàu Sữa Sốt Phô Mai Đút Lò" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+            <div class="col-span-4 image-container h-[676px] rounded-[5px] overflow-hidden cursor-pointer">
+                <img loading="lazy" src="https://tiki.vn/blog/wp-content/uploads/2023/07/thumb-10.jpg" alt="Lẩu Riêu Cua Hải Sản" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="relative flex w-full h-full mt-6 top-0 left-0 bg-no-repeat bg-center bg-cover bg-background_opacity " 
+    style="background-image: url(https://img.dothi.net/2020/08/07/Z9BcC3fq/nha-hang-doc-dao-2-97c4.jpg);">
+        <div class="w-1/2 h-full border-2 rounded-tr-lg bg-transparent overflow-hidden">ẻgte</div>
+        <div class="w-1/2 h-full border-2 rounded-tl-lg bg-transparent overflow-hidden">héhet</div>
+        <div class="mx-auto text-center">
+            <h1 class="font-mono text-6xl text-white mt-20">Hoa Việt</h1>
+            <h2 class="font-protest_revolution text-5xl text-orange-400 my-10">Menu</h2>
+            <div class= "cursor-pointer mb-20 h-[600px]">
+                <img loading="lazy" src="https://vuainnhanh.com/wp-content/uploads/2021/08/mau-menu-nha-hang-41.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div> -->
+    <div class="relative w-full h-full bg-cover bg-center bg-fixed mt-6"
+    style="background-image: url('https://img.dothi.net/2020/08/07/Z9BcC3fq/nha-hang-doc-dao-2-97c4.jpg');">
+        <!-- Lớp phủ -->
+        <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+        <!-- Nội dung -->
+        <div class="relative z-10 text-white flex items-center justify-center h-full">
+            <div class="mx-auto text-center">
+                <h1 class="font-mono text-6xl text-white mt-20">Hoa Việt</h1>
+                <h2 class="font-protest_revolution text-5xl text-orange-400 my-5">Menu</h2>
+                <div class= "cursor-pointer mb-20 h-[550px]">
+                    <img loading="lazy" src="https://vuainnhanh.com/wp-content/uploads/2021/08/mau-menu-nha-hang-41.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-20 mx-44 flex">
+        <div class="text-center w-[60%] p-[60px] bg-white rounded-lg shadow-lg">
+            <h1 class="font-protest_revolution text-orange-400 text-5xl">Đặt <br><span class="font-mono text-black">bàn</span></h1>
+            <p class="my-10 font-extralight">Bạn đang tìm kiếm một trải nghiệm ẩm thực thú vị đầy hương vị và sự phấn khích? Không đâu khác ngoài Nhà hàng Hoa Việt! Ẩm thực Việt Nam của chúng tôi chỉ được chế biến từ những nguyên liệu tươi ngon nhất và các đầu bếp của chúng tôi rất đam <br> mê chế biến những món ăn vừa ngon vừa đẹp mắt.
+                <br>Còn chờ gì nữa mà không đặt bàn ngay hôm nay và tự thưởng cho mình một bữa ăn đáng nhớ? Chúng tôi chắc rằng sẽ không khiến bạn thất vọng đâu!
+            </p>
+            <h2 class="text-3xl border-b-[1px] py-5">Đặt bàn</h2>
+            <div class="flex mt-5">
+                <div class="flex items-center">
+                    <p>Đặt bàn cho:</p>
+                    <i class="fa-solid fa-star text-[6px] ml-1" style="color: red"></i>
+                </div>
+                <div class="flex ml-28">
+                    <label class="flex items-center cursor-pointer">
+                        <input type="radio" name="isTypeTable" class="hidden peer">
+                        <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                        <span class="peer-checked:text-orange-400 transition-all duration-300">Một bàn</span>
+                    </label>
+                    <label class="flex items-center ml-5 cursor-pointer">
+                        <input type="radio" name="isTypeTable" class="hidden peer">
+                        <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                        <span class="peer-checked:text-orange-400 transition-all duration-300">Một sự kiện</span>
+                    </label>
+                </div>
+                
+            </div>
+            <form action="" class="flex flex-wrap mt-10">
+                <div class="relative w-full">
+                    <input type="text" id="name" placeholder="" required oninput="handleInput(event)"
+                        class="peer w-full border-b-2 py-2 focus:outline-none focus:border-orange-400">
+                    <label for="name" id="label-register"
+                        class="absolute cursor-text left-0 top-2 text-gray-400 text-sm transition-all duration-300 
+                               peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-400 
+                               peer-placeholder-shown:text-base peer-focus:top-[-25px] peer-focus:text-orange-400 peer-focus:text-sm">
+                        Nhập tên của bạn:
+                    </label>
+                </div>
+                <div class="relative w-[45%] mt-10">
+                    <input type="email" id="email" placeholder="" class="peer w-full border-b-2 py-2 focus:outline-none focus:border-orange-400"
+                            required oninput="handleInput(event)">
+                    <label for="email" id="label-register" 
+                            class="absolute cursor-text left-0 text-gray-400 text-sm transition-all duration-300 
+                                    peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400
+                                    peer-focus:top-[-25px] peer-focus:text-orange-400 peer-focus:text-sm">
+                            Địa chỉ email:
+                    </label>
+                </div>
+                <div class="relative w-[45%] mt-10 ml-14 flex flex-col text-start">
+                    <input type="tel" id="tel" placeholder=" " class="peer w-full border-b-2 py-2 focus:outline-none border-gray-300 focus:border-orange-400"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required oninput="handleInput(event)">
+                    <label for="tel" id="label-register" 
+                            class="absolute cursor-text left-0 text-gray-400 text-sm transition-all duration-300 
+                                peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400
+                                peer-focus:top-[-25px] peer-focus:text-orange-400 peer-focus:text-sm">
+                        Số điện thoại:
+                    </label>
+                    <p class="mt-2 text-gray-500">Format: 123-45-678</p>
+                </div>
+                <div class="relative w-[45%] mt-10">
+                    <input type="date" name="date" id="" placeholder=""
+                        class="peer w-full border-b-2 py-2 focus:outline-none focus:border-orange-400 cursor-text">
+                    <label for="" 
+                        class="absolute left-0 top-[-25px] text-gray-400 text-sm transition-all duration-300 
+                               peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-400 
+                               peer-placeholder-shown:text-base peer-focus:top-[-25px] peer-focus:text-orange-400 peer-focus:text-sm
+                               peer-valid:top-[-25px] peer-valid:text-gray-400 peer-valid:text-sm">
+                        Vào ngày nào? 
+                    </label>
+                </div>
+                <div class="relative w-[45%] mt-10 ml-14">
+                    <input type="time" id="time" name="time" required
+                        class="peer w-full border-b-2 px-3 py-2 focus:outline-none border-gray-300 
+                               focus:border-orange-400 peer-valid:border-orange-400 cursor-text">
+                    <label for="time"
+                        class="absolute left-0 top-[-25px] text-gray-400 text-sm transition-all duration-300
+                               peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-400 
+                               peer-placeholder-shown:text-base peer-focus:top-[-25px] peer-focus:text-orange-400 peer-focus:text-sm 
+                               peer-valid:top-[-25px] peer-valid:text-gray-400 peer-valid:text-sm">
+                        Thời gian?
+                    </label>
+                </div>
+                <div class="relative w-[70%] flex mt-10">
+                    <label for="" class="flex items-center  transition-all duration-300
+                                            peer-focus:text-orange-400 peer-focus:text-sm">
+                        <span>Có bao nhiêu người?</span>
+                        <i class="fa-solid fa-star text-[6px] ml-1" style="color: red"></i>
+                    </label>
+                    <input type="number" name="" id="" placeholder="Số lượng người" class="peer ml-5 pl-5 border-2 focus:outline-orange-400">
+                </div>
+            </form>
+            <div class="mt-10 mb-5 flex items-center">
+                <h4>Địa điểm nào?</h4>
+                <i class="fa-solid fa-star text-[6px] ml-1" style="color: red"></i>
+            </div>
+            <form action="" class="flex flex-col items-start ml-3 text-gray-400">
+                <label class="flex items-center cursor-pointer mb-3">
+                    <input type="radio" name="isTypeStreet" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">143 Võ Oanh, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh</span>
+                </label>
+                <label class="flex items-center cursor-pointer mb-3">
+                    <input type="radio" name="isTypeStreet" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">143 Võ Oanh, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh</span>
+                </label>
+                <label class="flex items-center cursor-pointer mb-3">
+                    <input type="radio" name="isTypeStreet" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">143 Võ Oanh, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh</span>
+                </label>
+                <label class="flex items-center cursor-pointer mb-3">
+                    <input type="radio" name="isTypeStreet" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">143 Võ Oanh, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh</span>
+                </label>
+                <label class="flex items-center cursor-pointer mb-3">
+                    <input type="radio" name="isTypeStreet" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">143 Võ Oanh, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh</span>
+                </label>
+                <label class="flex items-center cursor-pointer mb-3">
+                    <input type="radio" name="isTypeStreet" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">143 Võ Oanh, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="isTypeStreet" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">143 Võ Oanh, P.25, Quận Bình Thạnh, Tp. Hồ Chí Minh</span>
+                </label>
+            </form>
+            <div class="flex items-center mb-5 mt-10">
+                <h4>Tùy chọn chỗ ngồi</h4>
+                <i class="fa-solid fa-star text-[6px] ml-1" style="color: red"></i>
+            </div>
+            <form action="" class="flex text-gray-400">
+                <label class="flex items-center cursor-pointer mr-5">
+                    <input type="radio" name="isTypeChair" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">Phòng máy lạnh</span>
+                </label>
+                <label class="flex items-center cursor-pointer mr-5">
+                    <input type="radio" name="isTypeChair" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">No AC</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="isTypeChair" class="hidden peer">
+                    <span class="w-5 h-5 border-2 border-gray-400 rounded-full flex justify-center items-center mr-2 transition-all duration-300 peer-checked:border-4 peer-checked:border-orange-400"></span>
+                    <span class="peer-checked:text-orange-400 transition-all duration-300">Phòng bất kỳ</span>
+                </label>
+            </form>
+            <button type="button" class="mt-10 py-4 w-full bg-gray-200 text-lg hover:bg-orange-400 hover:text-white">GỬI</button>
+        </div>
+        <div class="w-[40%] h-[620px] rounded-[5px] overflow-hidden cursor-pointer sticky top-[calc(100vh-620px)]"> 
+            <img loading="lazy" src="https://spacet-release.s3.ap-southeast-1.amazonaws.com/img/blog/2023-10-09/mau-thiet-ke-nha-hang-sang-trong-hien-dai-6523dbc4001678967e231668.webp" alt="Gỏi Sen Tôm Thịt" class="w-full h-full object-cover transition-transform duration-300 hover:scale-125"> 
+        </div>
+    </div>
+    <div class="mt-10 w-full h-[500px] bg-cover bg-center bg-contain flex flex-col justify-center items-center" style="background-image: url(assets/img/background-mid.png);">
+        <h3 class="font-protest_revolution text-orange-400 text-6xl">Góc trang trí</h3>
+        <h1 class="font-mono text-white font-bold text-7xl">Của chúng tôi</h1>
+    </div>
+    <div class="mt-10 flex mx-44">
+        <div class="w-[60%] h-[500px]">
+            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250821.34462815014!2d106.43692223281246!3d10.804915900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a3fbdbffff%3A0xbb015754eb33299c!2zVFLGr-G7nE5HIMSQ4bqgSSBI4buMQyBHSUFPIFRIw5RORyBW4bqsTiBU4bqiSSBUUC4gSENNIFBow7JuZyBDw7RuZyB0w6FjIFNpbmggdmnDqm4!5e0!3m2!1svi!2s!4v1733629146051!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="w-[40%] h-[500px] bg-[#25252f] text-center">
+            <p class="text-orange-400 mt-16">02 Võ Oanh, Phường 25, Quận Bình Thạnh, <br>TP.HCM </p>
+            <p class="text-orange-400 font-bold mt-4">07:00 đến 23:00 Hàng ngày</p>
+            <button class="bg-[#69727d] text-white flex items-center mx-auto my-5 py-2 px-5">
+                <i class="fa-solid fa-phone"></i>
+                <p class="ml-2">+84 1472 58 36 90</p>
+            </button>
+            <button class="flex items-center mx-auto text-white">
+                <i class="fa-solid fa-vr-cardboard"></i>
+                <p class="ml-2">Tham quan</p>
+            </button>
+            <h1 class="my-5 font-mono text-white text-7xl">Hoa Việt</h1>
+            <h3 class="font-protest_revolution text-orange-400 text-6xl">Original</h3>
+        </div>
+    </div>
+    <div class="relative bg-transparent w-full h-[30px] mt-10 flex">
+        <div class="bg-[#262626] rounded-tr-2xl w-1/2 h-full"></div>
+        <div class="bg-[#262626] rounded-tl-2xl w-1/2 h-full"></div>
+    </div>
+    <div class="w-full bg-[#262626]">
+        <div class="flex mx-40 text-white font-light pb-16">
+            <div class="w-1/4 mt-10 mr-16">
+                <img src="assets/img/logo-restaurant-Photoroom.png" alt="Logo Hoa Việt" class="w-52 h-32 mb-5">
+                <p class="mb-5">Hoa Việt là sự kết hợp tinh tế của ẩm thực truyền thống Việt Nam trong không gian hiện đại, sang trọng, mang đậm phong cách Đông Dương, tọa lạc tại các địa điểm khác nhau ở trung tâm Thành phố Hồ Chí Minh.</p>
+                <img src="assets/img/michelin.jpg" alt="Sao Michelin" class="w-[250px] h-[150px] mb-5">
+                <div class="flex justify-around text-2xl">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+            <div class="w-[13%] mt-10">
+                <h3 class="font-mono text-xl font-bold mb-10">Tổng quan</h3>
+                <ul>
+                    <li class="mb-2">
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="">Menu</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="">Đặt món online</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="">Về chúng tôi</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="">Block</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="">Sơ đồ website</a>
+                    </li>
+                </ul>    
+            </div>
+            <div class="w-1/4 mt-10 mr-16">
+                <h3 class="font-mono text-xl font-bold mb-10">Các chi nhánh</h3>
+                <div class="text-white">
+                    <div class="flex items-center mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="ml-3">Hoa Việt-Original: 02 Võ Oanh, Phường 25, Quận Bình Thạnh, Tp. Hồ Chí Minh</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p class="ml-3">+84 1472 58 36 90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 mt-10">
+                <h3 class="font-mono text-xl font-bold mb-10">Công ty TNHH Hoa Việt GRAND IMPERIAL SAIGON</h3>
+                <p class="mb-3">Mã số thuế: ***********</p>
+                <p class="mb-3">Giấy CNĐKDN: ********** - Ngày cấp: 31/07/2010 (thay đổi lần thứ 2: ngày 01/02/2018)</p>
+                <p class="mb-3">Cơ quan cấp: Phòng Đăng ký kinh doanh - Sở kế hoạch và đầu tư TP.HCM</p>
+                <p class="mb-3">Địa chỉ đăng ký kinh doanh: Số 101,Đường Hai Bà Trưng,Phường Bến Nghé, Quận 1, Tp.HCM</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-[#1b1b1b] text-white font-light border-t-2 border-[#363636] py-3">
+        <div class="flex justify-between mx-40">
+            <p>2024 © Copyright Hoa Việt Group - Xây dựng bằng tình yêu by Phạm Xuân Hòa</p>
+            <div class="">
+                <ul class="flex justify-around">
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li class="ml-4"><a href="">Menu</a></li>
+                    <li class="ml-4"><a href="">Lịch sử</a></li>
+                    <li class="ml-4"><a href="">Sơ đồ trang web</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function handleInput(event) {
+            const input = event.target;
+            const label = input.nextElementSibling;
+    
+            // Nếu input có dữ liệu, giữ nhãn ở trên
+            if (input.value.trim() !== '') {
+                label.classList.add('top-[-25px]', 'text-gray-400', 'text-sm');
+                label.classList.remove('top-2', 'text-base', 'text-gray-400');
+            } else {
+                // Nếu input trống, đưa nhãn về vị trí ban đầu
+                label.classList.add('top-2', 'text-base', 'text-gray-400');
+                label.classList.remove('top-[-25px]', 'text-orange-400', 'text-sm');
+            }
+        }
+    </script>
+</body>
+</html>
